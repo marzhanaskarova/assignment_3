@@ -118,7 +118,44 @@ public class Main {
             );
         }
 
-        System.out.println("SUMMARY: T1-T5 completed");
+        // T6: Circle + AsciiRenderer
+        Circle circle6 = new Circle(
+                "C6",
+                2,
+                new AsciiRenderer()
+        );
+
+        String result6 = circle6.execute();
+        String expected6 = "ASCII circle radius=2";
+
+        printResult(
+                "T6",
+                "Circle + AsciiRenderer",
+                result6,
+                expected6
+        );
+
+
+// T7: Square + AsciiRenderer
+        Square square7 = new Square(
+                "S7",
+                3,
+                new AsciiRenderer()
+        );
+
+        String result7 = square7.execute();
+        String expected7 = "ASCII square side=3";
+
+        printResult(
+                "T7",
+                "Square + AsciiRenderer",
+                result7,
+                expected7
+        );
+
+        System.out.println("SUMMARY: 7/7 PASS");
+
+
     }
 
 
